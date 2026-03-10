@@ -140,7 +140,7 @@ while True:
     # Go again prompt handling
     elif state["go_again_prompt"]:
         if state["btn1_pressed"] or state["btn2_pressed"]:
-            # Yes - reload countdown
+            # Yes, reload countdown
             state["btn1_pressed"] = False
             state["btn2_pressed"] = False
             state["go_again_prompt"] = False
@@ -148,7 +148,7 @@ while True:
             last_tick = now
 
         if state["btn3_pressed"]:
-            # No - back to selection mode
+            # No, back to selection mode
             state["btn3_pressed"] = False
             state["go_again_prompt"] = False
             state["selection_mode"] = True
